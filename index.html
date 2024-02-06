@@ -1,31 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>My BCIT Project</title>
-    <meta name="comp1800 template" content="My 1800 App">
+    <meta name="comp1800 template" content="My 1800 App" />
 
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap Library CSS CDN go here -->
-    <!-- Boostrap Library JS CDN  go here -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
 
+    <!-- Boostrap Library JS CDN  go here -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
     <!-- Other libraries go here -->
 
     <!-- Link to styles of your own -->
+    <link rel="stylesheet" href="./styles/style.css" />
     <!-- <link rel="stylesheet" href="./styles/style.css"> -->
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <!------------------------------>
     <!-- Your HTML Layout go here -->
     <!------------------------------>
     <!-- Stuff for body goes here -->
 
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./images/cat2.jpg" alt="" height="36" />
+          CatHotel
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <div class="container col-xxl-8 px-4 py-5">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img
+            src="./images/cat3.jpg"
+            class="d-block mx-lg-auto img-fluid"
+            alt="Bootstrap Themes"
+            width="700"
+            height="500"
+            loading="lazy"
+          />
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold lh-1 mb-3">Welcome to CatHotel</h1>
+          <p class="lead">
+            Experience luxury and loving care for your feline friendss
+          </p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <button
+              type="button"
+              class="btn btn-primary btn-lg px-4 gap-3 btn-primary"
+            >
+              Log in
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-secondary btn-lg px-4 btn-primary-subtle"
+            >
+              Sign up
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="images/cat1.jpg"
+              class="card-img-top"
+              alt=""
+              height="300"
+              width="300"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Nap in Comfort</h5>
+              <p class="card-text">
+                Our cozy accommodations are designed with your cat's comfort in
+                mind.
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="images/cat4.jpg"
+              class="card-img-top"
+              alt=""
+              height="300"
+              width="300"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Playful Hideaways</h5>
+              <p class="card-text">
+                With stimulating play areas, your cat will enjoy an adventurous
+                stay.
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="images/cat5.jpg"
+              class="card-img-top"
+              alt=""
+              height="300"
+              width="300"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Attentive Care</h5>
+              <p class="card-text">
+                Our experienced staff provides attentive care, making sure your
+                cat's every need is met with affectionate care and expert
+                handling.
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <p class="col-md-4 mb-0 text-muted">&copy; 2024 CatHotel, Inc</p>
+
+        <a
+          href="/"
+          class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none"
+        >
+          <svg class="bi me-2" width="40" height="32">
+            <use xlink:href="#bootstrap" />
+          </svg>
+        </a>
+
+        <ul class="nav col-md-4 justify-content-end">
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-muted">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-muted">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-muted">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-muted">Contact Us</a>
+          </li>
+        </ul>
+      </footer>
+    </div>
 
     <!---------------------------------------------->
     <!-- Your own JavaScript functions go here    -->
@@ -33,7 +215,5 @@
 
     <!-- Link to scripts of your own -->
     <!-- <script src="./scripts/script.js"></script> -->
-
-</body>
-
+  </body>
 </html>
